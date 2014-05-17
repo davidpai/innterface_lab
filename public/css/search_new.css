@@ -1,0 +1,383 @@
+body {
+    background-color: #303540;
+    min-width: 320px;
+}
+#main {
+    padding-left: 0;
+    padding-right: 0;
+}
+#top {
+    height: 6em;
+    background-color: #FFF;
+    position: fixed;
+    z-index: 2;
+}
+#logo_block {
+    float: left;
+    width: 90px;
+    height: 100%;
+    margin: 0;
+    min-width: 90px;
+    min-height: 84px;
+}
+#logo_block .logo {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+#search_block {
+    float: left;
+    width: 40%;
+    height: 100%;
+    line-height: 100%;
+    margin: 0;
+    max-width: 32em;
+    min-width: 268px;
+}
+#search_form {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1.65em;
+}
+input.search_input {
+    outline: none; /* 去除瀏覽器預設的發光效果 */
+    border: 1px solid #D6D6D6;
+    font-size: 1em;
+    color: #5F5F5F;
+    text-indent: 0.5em;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 2em;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    background-color: transparent;
+    background-image: url('../img/searchbutton.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 3em;
+}
+.search_button {
+    position: absolute;
+    width: 48px;
+    height: 3em;
+    top: 0;
+    right: -16px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+}
+#func_block {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    width: 30%;
+    height: 100%;
+    line-height: 100%;
+    min-width: 240px;
+    max-width: 40%;
+}
+.func_bar {
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+.func_bar-item {
+    display: block;
+    float: right;
+    margin-right: 1em;
+}
+.func_bar-item a {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 1.2em;
+}
+li a {
+    text-decoration: none;
+    color: #0088CC;
+}
+li a:hover {
+    color: #0088CC;
+    text-decoration: underline;
+}
+li a.highlight {
+    text-decoration: none;
+    color: #FF5522;
+}
+li a.highlight:hover {
+    color: #FF5522;
+    text-decoration: underline;
+}
+#profile {
+    height: 52px;
+    line-height: 52px;
+}
+#profile img {
+    float: left;
+    border: 1px solid #999;
+    margin-right: 10px;
+}
+.pinboard_login_msg {
+    display: none;
+    font-size: 1em;
+}
+.pinboard_login_msg ul {
+    display: block;
+    margin: 0;
+    height: 3em;
+    line-height: 3em;
+    border-top: 1px solid #DEDEDE;
+    font-size: 1.2em;
+}
+.pinboard_login_msg li {
+    display: block;
+    float: right;
+    height: 3em;
+    line-height: 3em;
+    margin: 0 0 0 1em;
+}
+.pinboard_login_msg li.cancel {
+    float: left;
+    margin: 0 1em 0 0;
+}
+li.cancel a {
+    color: #AAA;
+}
+.pinboard_login_msg li a {
+    display: block;
+    height: 3em;
+    line-height: 3em;
+}
+.pinboard_login_msg p {
+    margin: 3em 2em;
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+.message_bar {
+    height: 3em;
+    line-height: 3em;
+    background-color: #4C5566;
+    color: #BFBFBF;
+    box-shadow: 1px 4px 4px #21242C;
+    padding: 0 0 0 24px;
+}
+.exception_msg {
+    color: #FFF;
+    text-align: center;
+}
+#content_block {
+    margin-top: 10em;
+}
+ul.thumbnail_wall {
+    width: 1020px;
+    margin: 0 auto;
+}
+/* ul > li */
+.thumb_item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 24px;
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+}
+.thumb_img_wrapper {
+    background-color: #000;
+    border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    width: 100%;
+    max-height: 500px;
+    min-width: 280px;
+    max-width: 280px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px #21242C;
+}
+.thumb_img_wrapper img {
+    border: 1px solid #2D323D;
+    border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    min-width: 280px;
+    max-width: 280px;
+    margin: 0 auto;
+}
+.thumb_item h2 {
+    margin: 0 auto;
+    width: 96%;
+    font-size: 1.2em;
+    font-weight: normal;
+    height: 2.4em;
+    line-height: 1.2em;
+    overflow: hidden;
+    color: #FFF;
+    margin-top: 4px;
+}
+.thumb_item .extras {
+    width: 96%;
+    height: 26px;
+    text-align: right;
+}
+.thumb_item .extras a {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+    margin-left: 0.5em;
+
+}
+.thumb_item .extras i {
+    background-image: none;
+    font-size: 24px;
+}
+.thumb_item .extras span.text {
+    display: block;
+    float: right;
+    height: 26px;
+    line-height: 26px;
+    margin-right: .3em;
+}
+.thumb_item .extras a.click_count {
+    cursor: default;
+}
+.thumb_item .extras a.pin, .thumb_item .extras a.like, .thumb_item .extras a.dislike {
+    color: #FFF;
+}
+.thumb_item .extras a.unpin, .thumb_item .extras a.unlike, .thumb_item .extras a.undislike {
+    color: #B3C6EF;
+    opacity: .7;
+}
+.thumb_item .extras a.like_count {
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.thumb_item .extras a.like_count:hover {
+    color: #FFF;
+    background-color: #3C424F;
+    border: 1px solid #646B7A;
+}
+.thumb_item .extras a.like_count i {
+    font-size: 1.4em;
+}
+.thumb_item .extras a.dislike_count {
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.thumb_item .extras a.dislike_count:hover {
+    color: #FFF;
+    background-color: #3C424F;
+    border: 1px solid #646B7A;
+}
+.thumb_item .extras a.dislike_count i {
+    font-size: 1.4em;
+}
+/* workaround for WebKit implementation of matchMedia to work */
+@media only screen and (max-width:960px) {
+    .faake {}
+}
+@media only screen and (min-width: 1720px) {
+    /* 5 columns */
+    ul.thumbnail_wall {
+        width: 1700px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1360px) and (max-width:1699px) {
+    /* 4 columns */
+    ul.thumbnail_wall {
+        width: 1360px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1360px) {
+    /* 3 columns */
+    ul.thumbnail_wall {
+        width: 1020px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1019px) {
+    /* 2 columns */
+    ul.thumbnail_wall {
+        width: 680px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #top {
+        height: 6em;
+        background-color: #FFF;
+        position: relative;
+        z-index: 2;
+    }
+    
+    /* width under 768px, must have another design for top block (logo, search box, func bar) */
+    
+}
+
+@media only screen and (min-width: 361px) and (max-width:767px) {
+    /* 1 column */
+    ul.thumbnail_wall {
+        width: 340px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    /* 1 column and 100% fluid */
+    ul.thumbnail_wall {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .thumb_item {
+        margin: 16px;
+    }
+
+}
+.view_items {
+    color: #FFF;
+    text-align: center;
+    height: 1.8em;
+    line-height: 1.8em;
+}
+.more_items {
+    color: #FFF;
+    text-align: center;
+    background-color: #3E434F;
+    height: 3em;
+    line-height: 3em;
+    opacity: 0.7;
+}
+.more_items:hover {
+    opacity: 1;
+}
+.more_items a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+}
+.iconfont-down-open {
+    font-size: 150%;
+}
+
+.footer {
+    color: gray;
+    margin: 2em 0;
+    text-align: center;
+}
+.footer a {
+    color: #FF5F00;
+}

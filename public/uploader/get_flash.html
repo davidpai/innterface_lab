@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>您的瀏覽器需要安裝Adobe Flash Player才能播放內容</title>
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript">//<![CDATA[
+$(document).ready(function(){
+    var start_index = 0;
+    var end_index = 0;
+    var agent = navigator.userAgent.toLowerCase();
+    var is_android = ( agent.indexOf('android') != -1 );
+    if ( is_android ) {
+        var start_index = agent.indexOf('android');
+        var end_index = agent.indexOf(';',start_index);
+    }
+    var os = navigator.userAgent.substring(start_index, end_index);
+    if ( os != '' ) {
+        $('#os').text(os);
+    } else {
+        $('#your_os').css('display','none');
+    }
+});
+//]]></script>
+</head>
+
+<body>
+		<div id="myContent" style="text-align:center;line-height:28px;">
+			<h3>您的瀏覽器需要安裝Adobe Flash Player才能播放內容</h3>
+            <h3>桌上型電腦、筆記型電腦</h3>
+            <p>
+              <div>請點擊以下按鈕來下載安裝Adobe Flash Player</div>
+			  <div><a href="http://get.adobe.com/tw/flashplayer/"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" border="0" /></a></div>
+            </p>
+            <h3>平板電腦、智慧型手機、小筆電</h3>
+            <p>
+              <div>請依照您的作業系統版本，下載相對應的APK檔來安裝</div>
+              <div id="your_os" style="display:block;">您的作業系統: <span id="os" style="font-weight:bold"></span></div>
+              <ul style="list-style-type:none;">
+                <li>Android 2.x 或 3.x : <a href="http://www.freeclass.tw/data/Flash_Player_11.1_for_Android_2.x_and_3.x_(11.1.111.16).apk">下載Flash Player 11.1 for Android</a></li>
+                <li>Android 4.x : <a href="http://www.freeclass.tw/data/Flash_Player_11.1_for_Android_4.0_(11.1.115.17).apk">下載Flash Player 11.1 for Android</a></li>
+              </ul>
+            </p>
+		</div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+a{
+ outline: none; /* for Firefox */
+ hlbr:expression(this.onFocus=this.blur()); /* for IE */
+}
+
+.left {
+	background-color: rgb(206,210,217);
+	text-align: center;
+	float: left;
+	height: 645px;
+	width: 640px;
+	display: block;
+	position: fixed;
+	margin: 0px;
+}
+
+.right {
+	text-align: left;
+	float: right;
+	width: 320x;
+	overflow: auto;
+}
+
+.app_info {
+	float: left;
+	width: 305px;
+	margin-left: 30px;
+}
+
+.app_icon {
+	border-radius: 23px;
+	width: 130px;
+	height: 130px;
+	margin-top: 63px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	float: left;
+	display: block;
+	box-shadow: 0px 1px 4px rgb(191,191,191);
+}
+
+.app_icon img{
+	width: 128px;
+	height: 128px;
+	overflow: hidden;
+
+	}
+	
+.app_feature {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	display: block;
+	float: left;
+}
+
+a.sc{
+	width: 64px; 
+	height: 96px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+}
+a.sc img{
+	width: 64px; 
+	height: 96px;
+		margin-right: 8px;
+	margin-bottom: 10px;
+}
+
+.app_name {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 24px;
+	color: rgb(63,63,63);
+	display: block;
+	clear: both;
+	width: 100%;
+	line-height: 30px;
+}
+
+.app_inc {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 18px;
+	color: rgb(127,127,127);
+	display: block;
+	clear: both;
+	width: 100%;
+	line-height: 30px;
+}
+
+.app_inc2 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 18px;
+	color: rgb(127,127,127);
+	display: block;
+	clear: both;
+	width: 100%;
+	line-height: 30px;
+	margin-bottom: 10px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+	margin-top: 10px;
+}
+
+
+.app_etc {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: rgb(51,51,51);
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+.app_etc2 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: rgb(51,51,51);
+	overflow: hidden;
+	line-height: 20px;
+}
+
+.app_etc ul, .app_etc li{
+	list-style-image: none;
+	list-style-type: none;
+}
+
+.app_etc ul{
+	margin-bottom: 10px;
+	overflow: hidden;
+	margin-left: 0px;
+}
+
+.app_etc li{
+	display: block;
+	line-height: 24px;
+}
+
+.empty{
+	height: 18px;
+	display: block;
+	float: left;
+}
+
+.star{
+	display: block;
+	overflow: hidden;
+	height: 20px;
+	margin-top: 5px;
+}
+.icon-star-empty{
+	background-position:-144px 0;
+	background-image: url(../img/glyphicons-halflings.png);
+	height: 18px;
+	width: 18px;
+	display: block;
+	float: left;
+	margin-top: 5px;
+}
+
+#fadeout_top {
+	position: fixed;
+	z-index: 99;
+	background-image: url(../img/fadeout_top.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	overflow: hidden;
+	height: 64px;
+	width: 300px;
+	display: block;
+	top: 0px;
+	right: 0px;
+	float: left;
+}
+#fadeout_bottom {
+	position: fixed;
+	z-index: 99;
+	background-image: url(../img/fadeout_bottom.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	overflow: hidden;
+	height: 64px;
+	width: 320px;
+	display: block;
+	right: 0px;
+	bottom: 0px;
+		float: left;
+}
+
+.my_btn a{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: #333;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid #BBB;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 170px;
+	padding: 5px;
+	text-decoration: none;
+	clear: both;
+}
+.my_btn a:hover{
+	text-decoration: none;
+	color: #0066CC;
+}
+
+
+.container-fluid{
+	height: 640px;
+	width: 960px;
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	z-index: 999;
+}
+
+.row-fluid{
+	width:320px;
+	height: 480px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	margin-top: 80px;
+	margin-bottom: auto;
+} 
+.row-fluid img{
+	width:320px;
+	height: 480px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+
+}

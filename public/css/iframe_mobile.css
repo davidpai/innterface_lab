@@ -1,0 +1,464 @@
+@charset "utf-8";
+a{
+ outline: none; /* for Firefox */
+ hlbr:expression(this.onFocus=this.blur()); /* for IE */
+}
+
+#slider {
+	width: 320px;
+	float: left;
+}
+#slider ul, #slider li {
+		list-style: none;
+		}
+		
+#slider li a{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/*-------------next back--------------------*/
+
+#back a{
+	display: block;
+	height: 34px;
+	width: 34px;
+	position: absolute;
+	overflow: hidden;
+	left: 5px;
+	top: 5px;
+	z-index: 12;
+}
+
+#back img{
+	height: 34px;
+	width: 34px;
+}
+
+#back a:hover{
+	background-image: url(../img/back_on.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+
+#slider .tabs li {
+	display:block;
+	width:42px;
+	height:42px;
+	position:absolute;
+	margin-top:5px;
+	}
+	
+#slider .tabs li.active {
+	width: 42px;
+	height: 42px;
+	}
+	
+#slider .tabs li.hover{
+	width: 42px;
+	height: 42px; 
+	}
+ 
+#slider .tabs li.prev {
+	width: 42px;
+	height: 42px;
+	left: 260px;
+	top: 200px;
+	z-index:11;
+}
+
+
+#slider .tabs li.prev:hover {
+	width: 42px;
+	height: 42px;
+	background-image: url(../img/prev_on.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+#slider .tabs li.next {
+	width: 42px;
+	height: 42px; 
+	left: 10px;
+	top: 10px;
+	z-index:10;
+
+}
+
+#slider .tabs li.next:hover {
+	width: 42px;
+	height: 42px;
+	background-image: url(../img/prev_on.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+/*--------------U-------------------*/
+#slider .tab_container {
+	padding: 0px;
+	}
+
+/*---------------------------------*/
+.row-fluid{
+	text-align: center;
+	overflow: hidden;
+	z-index:10;
+	height: 390px;
+	width: 260px;
+	margin-top: 45px;
+	margin-right: auto;
+	margin-bottom: 45px;
+	margin-left: auto;
+} 
+.row-fluid img{
+	width:260px;
+	height: 390px;
+}
+
+/*--------------k-------------------*/
+.app_info {
+	width: 270px;
+	margin-top: 0px;
+	z-index:11;
+	position: absolute;
+	left: 45px;
+}
+
+.app_icon {
+	border-radius: 23px;
+	width: 128px;
+	height: 128px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	float: left;
+	display: block;
+	background-color: transparent!important;
+	margin-top: 63px;
+	box-shadow: 0px 1px 4px rgb(191,191,191);
+}
+
+.app_iconbox{
+	z-index: 0;
+	border-radius: 23px;
+	width: 128px;
+	height: 128px;
+	display: block;
+	background-color: transparent!important;
+	background-image: url(../img/blue_box.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	z-index: 2;
+	position: absolute;
+	margin-top: 63px;
+}
+
+.app_icon img{
+
+	width: 128px;
+	height: 128px;
+	overflow: hidden;	
+	}
+	
+.app_feature {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	display: block;
+	float: left;
+}
+
+.tab_container p.sc{
+	width: 250px;
+	height: 375px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+
+.tab_container p.sc a{
+	width: 250px;
+	height: 375px;
+	float: left;
+	display: block;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+.tab_container p.sc a img{
+	width: 250px;
+	height: 375px;
+overflow: hidden;
+}	
+
+.app_name {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 24px;
+	color: rgb(63,63,63);
+	display: block;
+	clear: both;
+	line-height: 30px;
+	float: left;
+	margin-top: 0px;
+	width: 270px;
+	overflow: hidden;
+}
+
+.app_inc {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 18px;
+	color: rgb(127,127,127);
+	display: block;
+	clear: both;
+	width: 270px;
+	overflow: hidden;
+	line-height: 30px;
+}
+
+.app_inc2 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*font-weight: bold;*/
+	font-size: 18px;
+	color: rgb(127,127,127);
+	display: block;
+	clear: both;
+	width: 270px;
+	overflow: hidden;
+	line-height: 30px;
+	margin-bottom: 10px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+	margin-top: 10px;
+}
+
+
+.app_etc {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: rgb(51,51,51);
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+.app_etc span{
+	display: block;
+	line-height: 24px;
+	}
+	
+.app_etc2 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: rgb(51,51,51);
+	width: 270px;
+	overflow: hidden;
+	line-height: 20px;
+}
+
+.app_etc{
+	margin-bottom: 10px;
+	overflow: hidden;
+	margin-left: 0px;
+}
+
+.empty{
+	height: 18px;
+	display: block;
+	float: left;
+}
+
+.star{
+	display: block;
+	width: 270px;
+	overflow: hidden;
+	height: 20px;
+	margin-top: 5px;
+}
+.icon-star-empty{
+	background-position:-144px 0;
+	background-image: url(../img/glyphicons-halflings.png);
+	height: 18px;
+	width: 18px;
+	display: block;
+	float: left;
+	margin-top: 5px;
+}
+
+.my_btn a{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: #333;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid #BBB;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	width: 170px;
+	padding: 5px;
+	text-decoration: none;
+	clear: both;
+}
+.my_btn a:hover{
+	text-decoration: none;
+	color: #0066CC;
+}
+/* for Safari 325px*/ 
+@media only screen
+  and (min-width: 321px)
+  and (max-width: 325px)
+{
+#slider {
+width: 325px;
+	float: left;}
+}
+
+/* ʪ BlackBerry+SamsungGalaxyS3:380px */
+@media only screen
+  and (min-width: 326px)
+  and (max-width: 380px)
+{
+
+#slider {
+width: 380px;
+	float: left;}
+
+#slider .tabs li.prev {
+	width: 42px;
+	height: 42px;
+	left: 300px;
+	top: 200px;
+	z-index:11;
+}
+
+/*---------------------------------*/
+.row-fluid{
+	text-align: center;
+	overflow: hidden;
+	z-index:10;
+	height: 480px;
+	width: 320px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-left: 20px;
+} 
+.row-fluid img{
+	width:320px;
+	height: 480px;
+}
+
+/*--------------k-------------------*/
+.app_info {
+	width: 270px;
+	margin-left: 55px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	float: left;
+	z-index:11;
+}
+
+}
+
+/* ʪ htc+nokia:410px */
+@media only screen
+  and (min-width: 381px)
+  and (max-width: 410px)
+{
+#slider {
+width: 410px;
+	float: left;
+}
+
+#slider .tabs li.prev {
+	width: 42px;
+	height: 42px;
+	left: 330px;
+	top: 200px;
+	z-index:11;
+}
+
+/*---------------------------------*/
+.row-fluid{
+	text-align: center;
+	overflow: hidden;
+	z-index:10;
+	height: 480px;
+	width: 320px;
+	margin-top: 45px;
+	margin-right: auto;
+	margin-bottom: 45px;
+	margin-left: 35px;
+}
+.row-fluid img{
+	width:320px;
+	height: 480px;
+}
+
+/*--------------k-------------------*/
+.app_info {
+	width: 270px;
+	margin-left: 65px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	float: left;
+	z-index:11;
+}
+}
+
+/* ʪ:480px */
+@media only screen
+  and (min-width: 411px)
+  and (max-width: 480px)
+{
+#slider {width: 480px;}
+
+#slider .tabs li.prev {
+	width: 42px;
+	height: 42px;
+	left: 400px;
+	top: 200px;
+	z-index:11;
+}
+
+/*---------------------------------*/
+.row-fluid{
+	text-align: center;
+	overflow: hidden;
+	z-index:10;
+	height: 480px;
+	width: 320px;
+	margin-top: 45px;
+	margin-right: auto;
+	margin-bottom: 45px;
+	margin-left: 70px;
+}
+.row-fluid img{
+	width:320px;
+	height: 480px;
+}
+
+/*--------------k-------------------*/
+.app_info {
+	width: 270px;
+	margin-left: 105px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	float: left;
+	z-index:11;
+}
+}
