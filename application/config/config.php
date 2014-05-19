@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'TZVSXrAeaNP5EXQdtt3s6jIwXL0qPnpc';
+$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -244,12 +244,12 @@ $config['encryption_key'] = 'TZVSXrAeaNP5EXQdtt3s6jIwXL0qPnpc';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'innterface_lab_sess';
+$config['sess_cookie_name']		= '';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= FALSE;
 $config['sess_use_database']	= FALSE;
-$config['sess_table_name']		= 'innterface_lab_sess';
+$config['sess_table_name']		= '';
 $config['sess_match_ip']		= FALSE;
 $config['sess_match_useragent']	= TRUE;
 $config['sess_time_to_update']	= 300;
@@ -294,8 +294,8 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_expire' = The number in seconds the token should expire.
 */
 $config['csrf_protection'] = FALSE;
-$config['csrf_token_name'] = 'innterface_lab_csrf';
-$config['csrf_cookie_name'] = 'innterface_lab_csrf_cookie';
+$config['csrf_token_name'] = '';
+$config['csrf_cookie_name'] = '';
 $config['csrf_expire'] = 7200;
 
 /*
