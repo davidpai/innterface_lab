@@ -1,6 +1,6 @@
 <?php
-$config['my_session']['save_path'] = 'D:\wamp\www\innterface\innterface_lab\tmp';
-$config['my_session']['name'] = 'innterface_lab_sess';
+$config['my_session']['save_path'] = '';
+$config['my_session']['name'] = '';
 
 $config['my_session']['gc_probability'] = 1;
 $config['my_session']['gc_divisor'] = 100;
@@ -10,8 +10,8 @@ $config['my_session']['cookie_lifetime'] = 60*60*12;
 $config['my_session']['cookie_path'] = '/';
 $config['my_session']['cookie_domain'] = '';
 
-$config['raw_data']['itunes_rss']['dir'] = 'D:\wamp\www\innterface\innterface_lab\raw_data\itunes_rss';
-$config['raw_data']['search_api']['dir'] = 'D:\wamp\www\innterface\innterface_lab\raw_data\search_api';
+$config['raw_data']['itunes_rss']['dir'] = '';
+$config['raw_data']['search_api']['dir'] = '';
 
 $config['upload_tmp'] = 'webdata/tmp';
 $config['upload_file'] = 'webdata/upload_file';
